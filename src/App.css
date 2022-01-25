@@ -1,38 +1,121 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-size: 62.5%;
+  /* font-family: Lato,sans-serif; */
+  box-sizing: border-box; font-family:  Montserrat;
+}
+
 .App {
-  text-align: center;
+  background-color:#6C7A89;
+  color: black;
+
+}
+.parent{
+  width: 100%;
+  height: 100vh;
+
+ background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0px;
+}
+
+.row {
+  height: 35px;
+  /* justify-content: center; */
+  align-items:center;
+}
+
+
+.link {
   color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+  font-weight: 600;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.link:hover {
+  /* background-color: chocolate; */
+  transition: all  0.4s ease-in-out;
+  color:  black;
+  background: white;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.parent div {
+  height: 100vh;
+  font-size: 5rem;
+}
+.parent div .about-div {
+  margin-top: 20vh;
+  margin-left: 2vw;
+  width: 70%;
+}
+
+.fss {
+  font-size: 4rem;
+  color: rgb(214, 0, 0);
+  font-family: Montserrat;
+}
+
+
+
+
+
+
+/* work page editing */
+
+
+.work-div {
+  /* background: orange; */
+  height: 100vh;
+  padding-top: 15vh;
+}
+.Ui-logo {
+  font-size: 50px;
+}
+
+
+/* contact div design */
+
+.contact-div {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.form-div {
+  width: 50%;
+  height: auto;
+ padding: 5%;
+}
+
+@media only  screen and ( max-width:778px) {
+  .form-div {
+    width: 80%;
+    padding: 5%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+  
+}
+
+
+
+
+
+.bg-footer {
+  background:rgb(128, 83, 0);
+  color:white;
+}
+
+.footer { 
+  height: 20rem;
 }
