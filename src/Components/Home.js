@@ -1,34 +1,27 @@
 import React from 'react';
+import { BsBoxArrowRight } from "react-icons/bs";
+import {Link} from "react-router-dom";
 
 
 function Home() {
   return (
     <>
-    
-          <div className='w-100vh'>
-            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img src="./banner11.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="./banner22.jpg" className="d-block w-100" alt="..." />
-                  {/* <div className='banner1'> hh</div> */}
-                </div>
-                <div className="carousel-item">
-                  <img src="./banner33.jpg" className="d-block w-100" alt="..." />
-                </div>
+      <section>
+        <div className='home-container'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-6 col-12 text- p-5' >
+                <h1 className='m-4'><i className='text-light' >Developer Point Of View</i></h1>
+                <h2 className='text-indent-50 text-sm-left text-sm-center text-light '>“Good code is its own best documentation. As you’re about to add a comment, ask yourself, “How can I improve the code so that this comment isn’t needed?” Improve the code and then document it to make it even clearer.” <i className='text-end text-red fs-1 d-block'>By Akey Singh</i></h2>
               </div>
-              <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-              </button>
-            </div>          
+              <div className='col-md-6 col-12 text-center' >
+                <Link to="/about"><button className='know-more-btn fs-4 px-5 py-1  border-1'>Now More <BsBoxArrowRight className='fs-2' /></button></Link>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </section>
     </>
   );
 }

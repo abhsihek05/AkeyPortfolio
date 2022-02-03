@@ -1,4 +1,6 @@
 import React from 'react';
+import { FcBusinessman } from "react-icons/fc";
+
 
 function About() {
   return (
@@ -18,7 +20,7 @@ function About() {
               </div>
               <div className='col-md-6 col-12 text-black'>
                 <div className='about-div'>
-                  <img src="./person1.jpg"  className='w-75'  />
+                  <FcBusinessman className='person-icon' />
                 </div>
               </div>
             </div>
