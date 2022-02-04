@@ -1,12 +1,31 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { FcBusinessman } from "react-icons/fc";
 
 
 function About() {
+
+
+   useEffect(() => {
+    return () => {
+      console.log("this is testing for useEffect site is here");
+    };
+  }, [input])
+
+
+
   return (
     <>
+
+
+
+
       <section className='parent'>
         
+
+
+
+
+
 
         
         <div>
